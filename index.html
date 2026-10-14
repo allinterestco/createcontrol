@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CreateControl</title>
+  <meta name="description" content="A free production planner for solo creators. Turn your free hours into a steady posting schedule.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand"><span class="led" aria-hidden="true"></span>CreateControl</div>
+      <div class="muted" id="today-label"></div>
+    </header>
+    <main id="app" class="view" aria-live="polite"></main>
+    <p class="foot">Your plan stays in this browser. Nothing is sent to a server. Use Setup to back it up.</p>
+  </div>
+
+  <nav class="nav" aria-label="Sections">
+    <div class="nav-in" id="nav"></div>
+  </nav>
+  <div id="toast-host"></div>
+
+  <script src="core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
